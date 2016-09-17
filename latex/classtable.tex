@@ -1,0 +1,137 @@
+\hypertarget{classtable}{\section{table Class Reference}
+\label{classtable}\index{table@{table}}
+}
+
+
+Representa el tablero de juego.  
+
+
+
+
+{\ttfamily \#include $<$table.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtable_aacfc6b1c941dccd32e291032c77d34c7}{table} (int, int)
+\begin{DoxyCompactList}\small\item\em Constructor. Genera el tablero. \end{DoxyCompactList}\item 
+\hypertarget{classtable_a314d9cf6ee35be9ac221982599a57d8d}{\hyperlink{classtable_a314d9cf6ee35be9ac221982599a57d8d}{$\sim$table} ()}\label{classtable_a314d9cf6ee35be9ac221982599a57d8d}
+
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+\hypertarget{classtable_a88d91f03d9e95a16d6b319bf77ee44c6}{void \hyperlink{classtable_a88d91f03d9e95a16d6b319bf77ee44c6}{clean} ()}\label{classtable_a88d91f03d9e95a16d6b319bf77ee44c6}
+
+\begin{DoxyCompactList}\small\item\em Limpia, dejando en blanco el tablero. \end{DoxyCompactList}\item 
+void \hyperlink{classtable_a2964f74aa7468035a860887ace215019}{print} (\hyperlink{classcharacter}{character} \&, \hyperlink{classcharacter}{character} $\ast$$\ast$, \hyperlink{classamulet}{amulet} \&)
+\begin{DoxyCompactList}\small\item\em Imprime el tablero por pantalla. \end{DoxyCompactList}\item 
+char \& \hyperlink{classtable_ab09c976c6628906b4322abd61f0f0229}{get} (int, int)
+\begin{DoxyCompactList}\small\item\em Devuelve una referencia a una celda del tablero. \end{DoxyCompactList}\item 
+int \hyperlink{classtable_a701442b2f34c50427cd279f8f25528bf}{get\-\_\-xsize} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la anchura del tablero. \end{DoxyCompactList}\item 
+int \hyperlink{classtable_a1ef5ef16d31fb27d2ea24d0acea282b3}{get\-\_\-ysize} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la altura del tablero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representa el tablero de juego. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtable_aacfc6b1c941dccd32e291032c77d34c7}{\index{table@{table}!table@{table}}
+\index{table@{table}!table@{table}}
+\subsubsection[{table}]{\setlength{\rightskip}{0pt plus 5cm}table\-::table (
+\begin{DoxyParamCaption}
+\item[{int}]{ysize, }
+\item[{int}]{xsize}
+\end{DoxyParamCaption}
+)}}\label{classtable_aacfc6b1c941dccd32e291032c77d34c7}
+
+
+Constructor. Genera el tablero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ysize} & Altura del tablero \\
+\hline
+{\em xsize} & Anchura del tablero \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtable_ab09c976c6628906b4322abd61f0f0229}{\index{table@{table}!get@{get}}
+\index{get@{get}!table@{table}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}char \& table\-::get (
+\begin{DoxyParamCaption}
+\item[{int}]{y, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{classtable_ab09c976c6628906b4322abd61f0f0229}
+
+
+Devuelve una referencia a una celda del tablero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & Coordenada en Y \\
+\hline
+{\em x} & Coordenada en X \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia al contenido de una celda del tablero 
+\end{DoxyReturn}
+\hypertarget{classtable_a701442b2f34c50427cd279f8f25528bf}{\index{table@{table}!get\-\_\-xsize@{get\-\_\-xsize}}
+\index{get\-\_\-xsize@{get\-\_\-xsize}!table@{table}}
+\subsubsection[{get\-\_\-xsize}]{\setlength{\rightskip}{0pt plus 5cm}int table\-::get\-\_\-xsize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtable_a701442b2f34c50427cd279f8f25528bf}
+
+
+Devuelve la anchura del tablero. 
+
+\begin{DoxyReturn}{Returns}
+Anchura del tablero 
+\end{DoxyReturn}
+\hypertarget{classtable_a1ef5ef16d31fb27d2ea24d0acea282b3}{\index{table@{table}!get\-\_\-ysize@{get\-\_\-ysize}}
+\index{get\-\_\-ysize@{get\-\_\-ysize}!table@{table}}
+\subsubsection[{get\-\_\-ysize}]{\setlength{\rightskip}{0pt plus 5cm}int table\-::get\-\_\-ysize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtable_a1ef5ef16d31fb27d2ea24d0acea282b3}
+
+
+Devuelve la altura del tablero. 
+
+\begin{DoxyReturn}{Returns}
+Altura del tablero 
+\end{DoxyReturn}
+\hypertarget{classtable_a2964f74aa7468035a860887ace215019}{\index{table@{table}!print@{print}}
+\index{print@{print}!table@{table}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void table\-::print (
+\begin{DoxyParamCaption}
+\item[{{\bf character} \&}]{p, }
+\item[{{\bf character} $\ast$$\ast$}]{m, }
+\item[{{\bf amulet} \&}]{am}
+\end{DoxyParamCaption}
+)}}\label{classtable_a2964f74aa7468035a860887ace215019}
+
+
+Imprime el tablero por pantalla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Personaje \\
+\hline
+{\em m} & Vector que contiene los monstruos del juego \\
+\hline
+{\em am} & amuleto \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+table.\-hpp\item 
+table.\-cpp\end{DoxyCompactItemize}

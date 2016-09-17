@@ -1,0 +1,114 @@
+\hypertarget{classmonster}{\section{monster Class Reference}
+\label{classmonster}\index{monster@{monster}}
+}
+
+
+Representa un monstruo.  
+
+
+
+
+{\ttfamily \#include $<$monster.\-hpp$>$}
+
+
+
+Inherits \hyperlink{classcharacter}{character}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmonster_aad4487ad08dc8389e6d27a1dae549b55}{monster} (\hyperlink{classroom}{room} \&)
+\begin{DoxyCompactList}\small\item\em Constructor. Genera un monstruo en una habitación en una posición al azar. \end{DoxyCompactList}\item 
+\hypertarget{classmonster_a4b4482b9318c7a07951b1224078699d0}{\hyperlink{classmonster_a4b4482b9318c7a07951b1224078699d0}{$\sim$monster} ()}\label{classmonster_a4b4482b9318c7a07951b1224078699d0}
+
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+char \hyperlink{classmonster_a6941903e9c2252cb1bf0ff2fc3378fa8}{print} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el símbolo usado para pintar el monstruo en el tablero. \end{DoxyCompactList}\item 
+bool \hyperlink{classmonster_a6865ea3fa0daa2dc6ce831bcdc505d5a}{is\-\_\-near} (\hyperlink{classcharacter}{character} \&)
+\begin{DoxyCompactList}\small\item\em Comprueba si el monstruo está cerca del jugador. \end{DoxyCompactList}\item 
+bool \hyperlink{classmonster_ac86a063c732cddc17e870926e933943e}{allowtomove} (\hyperlink{classtable}{table} \&tb, int y, int x)
+\begin{DoxyCompactList}\small\item\em Herencia virtual de la clase character. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Representa un monstruo. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmonster_aad4487ad08dc8389e6d27a1dae549b55}{\index{monster@{monster}!monster@{monster}}
+\index{monster@{monster}!monster@{monster}}
+\subsubsection[{monster}]{\setlength{\rightskip}{0pt plus 5cm}monster\-::monster (
+\begin{DoxyParamCaption}
+\item[{{\bf room} \&}]{rm}
+\end{DoxyParamCaption}
+)}}\label{classmonster_aad4487ad08dc8389e6d27a1dae549b55}
+
+
+Constructor. Genera un monstruo en una habitación en una posición al azar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rm} & Habitación donde se desea colocar el monstruo \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmonster_ac86a063c732cddc17e870926e933943e}{\index{monster@{monster}!allowtomove@{allowtomove}}
+\index{allowtomove@{allowtomove}!monster@{monster}}
+\subsubsection[{allowtomove}]{\setlength{\rightskip}{0pt plus 5cm}bool monster\-::allowtomove (
+\begin{DoxyParamCaption}
+\item[{{\bf table} \&}]{tb, }
+\item[{int}]{y, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmonster_ac86a063c732cddc17e870926e933943e}
+
+
+Herencia virtual de la clase character. 
+
+\begin{DoxyReturn}{Returns}
+Indica si el movimiento está permitido. Véase que el monstruo no puede atravesar las puertas 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classcharacter_af3afd992370f845b5af942ef6bb72fe3}{character}.
+
+\hypertarget{classmonster_a6865ea3fa0daa2dc6ce831bcdc505d5a}{\index{monster@{monster}!is\-\_\-near@{is\-\_\-near}}
+\index{is\-\_\-near@{is\-\_\-near}!monster@{monster}}
+\subsubsection[{is\-\_\-near}]{\setlength{\rightskip}{0pt plus 5cm}bool monster\-::is\-\_\-near (
+\begin{DoxyParamCaption}
+\item[{{\bf character} \&}]{player}
+\end{DoxyParamCaption}
+)}}\label{classmonster_a6865ea3fa0daa2dc6ce831bcdc505d5a}
+
+
+Comprueba si el monstruo está cerca del jugador. 
+
+\begin{DoxyReturn}{Returns}
+Booleano que indica si el monstruo está adyacente al jugador 
+\end{DoxyReturn}
+\hypertarget{classmonster_a6941903e9c2252cb1bf0ff2fc3378fa8}{\index{monster@{monster}!print@{print}}
+\index{print@{print}!monster@{monster}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}char monster\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmonster_a6941903e9c2252cb1bf0ff2fc3378fa8}
+
+
+Devuelve el símbolo usado para pintar el monstruo en el tablero. 
+
+\begin{DoxyReturn}{Returns}
+Símbolo del monstruo 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcharacter}{character}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+monster.\-hpp\item 
+monster.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,134 @@
+\hypertarget{classdoor}{\section{door Class Reference}
+\label{classdoor}\index{door@{door}}
+}
+
+
+Representa una puerta.  
+
+
+
+
+{\ttfamily \#include $<$door.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classdoor_a89b2c766687197cc118314045231cbc7}{\hyperlink{classdoor_a89b2c766687197cc118314045231cbc7}{door} ()}\label{classdoor_a89b2c766687197cc118314045231cbc7}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\hypertarget{classdoor_a9199447935d5af5c053e2143ee6382c7}{\hyperlink{classdoor_a9199447935d5af5c053e2143ee6382c7}{door} (int, int)}\label{classdoor_a9199447935d5af5c053e2143ee6382c7}
+
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. Asigna a la puerta en el punto dado. \end{DoxyCompactList}\item 
+\hypertarget{classdoor_a228479b26ce28e11f251962f5231a1e8}{\hyperlink{classdoor_a228479b26ce28e11f251962f5231a1e8}{$\sim$door} ()}\label{classdoor_a228479b26ce28e11f251962f5231a1e8}
+
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classdoor_a981a3e9dc87aacbcf0dd1db664c3201e}{print} (\hyperlink{classtable}{table} \&)
+\begin{DoxyCompactList}\small\item\em Imprime la puerta en el tablero de juego. \end{DoxyCompactList}\item 
+void \hyperlink{classdoor_a4b42cce1c8ba8d24c776a21a35d6025d}{install\-\_\-left} (\hyperlink{classroom}{room} \&)
+\begin{DoxyCompactList}\small\item\em Coloca la puerta en el lado izquierdo de una habitación. \end{DoxyCompactList}\item 
+void \hyperlink{classdoor_a03da0ce330ce024ce80830638064a317}{install\-\_\-right} (\hyperlink{classroom}{room} \&)
+\begin{DoxyCompactList}\small\item\em Coloca la puerta en el lado derecho de una habitación. \end{DoxyCompactList}\item 
+void \hyperlink{classdoor_ac4639081f6bcdccd9413b7d296042325}{install\-\_\-top} (\hyperlink{classroom}{room} \&)
+\begin{DoxyCompactList}\small\item\em Coloca la puerta en el lado superior de una habitación. \end{DoxyCompactList}\item 
+void \hyperlink{classdoor_a443af5d482482b52554bb45ea3f5de34}{install\-\_\-bottom} (\hyperlink{classroom}{room} \&)
+\begin{DoxyCompactList}\small\item\em Coloca la puerta en el lado inferior de una habitación. \end{DoxyCompactList}\item 
+\hyperlink{structcoordinate}{coordinate} \hyperlink{classdoor_a0a9e142597bb11cab8bb2e806148682c}{get\-\_\-coordinate} ()
+\begin{DoxyCompactList}\small\item\em Devuelve las coordenadas de la puerta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representa una puerta. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classdoor_a0a9e142597bb11cab8bb2e806148682c}{\index{door@{door}!get\-\_\-coordinate@{get\-\_\-coordinate}}
+\index{get\-\_\-coordinate@{get\-\_\-coordinate}!door@{door}}
+\subsubsection[{get\-\_\-coordinate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coordinate} door\-::get\-\_\-coordinate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdoor_a0a9e142597bb11cab8bb2e806148682c}
+
+
+Devuelve las coordenadas de la puerta. 
+
+\begin{DoxyReturn}{Returns}
+Estructura de datos que contiene las coordenadas de la puerta. 
+\end{DoxyReturn}
+\hypertarget{classdoor_a443af5d482482b52554bb45ea3f5de34}{\index{door@{door}!install\-\_\-bottom@{install\-\_\-bottom}}
+\index{install\-\_\-bottom@{install\-\_\-bottom}!door@{door}}
+\subsubsection[{install\-\_\-bottom}]{\setlength{\rightskip}{0pt plus 5cm}void door\-::install\-\_\-bottom (
+\begin{DoxyParamCaption}
+\item[{{\bf room} \&}]{rm}
+\end{DoxyParamCaption}
+)}}\label{classdoor_a443af5d482482b52554bb45ea3f5de34}
+
+
+Coloca la puerta en el lado inferior de una habitación. 
+
+\begin{DoxyReturn}{Returns}
+Habitación donde se desea la puerta 
+\end{DoxyReturn}
+\hypertarget{classdoor_a4b42cce1c8ba8d24c776a21a35d6025d}{\index{door@{door}!install\-\_\-left@{install\-\_\-left}}
+\index{install\-\_\-left@{install\-\_\-left}!door@{door}}
+\subsubsection[{install\-\_\-left}]{\setlength{\rightskip}{0pt plus 5cm}void door\-::install\-\_\-left (
+\begin{DoxyParamCaption}
+\item[{{\bf room} \&}]{rm}
+\end{DoxyParamCaption}
+)}}\label{classdoor_a4b42cce1c8ba8d24c776a21a35d6025d}
+
+
+Coloca la puerta en el lado izquierdo de una habitación. 
+
+\begin{DoxyReturn}{Returns}
+Habitación donde se desea la puerta 
+\end{DoxyReturn}
+\hypertarget{classdoor_a03da0ce330ce024ce80830638064a317}{\index{door@{door}!install\-\_\-right@{install\-\_\-right}}
+\index{install\-\_\-right@{install\-\_\-right}!door@{door}}
+\subsubsection[{install\-\_\-right}]{\setlength{\rightskip}{0pt plus 5cm}void door\-::install\-\_\-right (
+\begin{DoxyParamCaption}
+\item[{{\bf room} \&}]{rm}
+\end{DoxyParamCaption}
+)}}\label{classdoor_a03da0ce330ce024ce80830638064a317}
+
+
+Coloca la puerta en el lado derecho de una habitación. 
+
+\begin{DoxyReturn}{Returns}
+Habitación donde se desea la puerta 
+\end{DoxyReturn}
+\hypertarget{classdoor_ac4639081f6bcdccd9413b7d296042325}{\index{door@{door}!install\-\_\-top@{install\-\_\-top}}
+\index{install\-\_\-top@{install\-\_\-top}!door@{door}}
+\subsubsection[{install\-\_\-top}]{\setlength{\rightskip}{0pt plus 5cm}void door\-::install\-\_\-top (
+\begin{DoxyParamCaption}
+\item[{{\bf room} \&}]{rm}
+\end{DoxyParamCaption}
+)}}\label{classdoor_ac4639081f6bcdccd9413b7d296042325}
+
+
+Coloca la puerta en el lado superior de una habitación. 
+
+\begin{DoxyReturn}{Returns}
+Habitación donde se desea la puerta 
+\end{DoxyReturn}
+\hypertarget{classdoor_a981a3e9dc87aacbcf0dd1db664c3201e}{\index{door@{door}!print@{print}}
+\index{print@{print}!door@{door}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void door\-::print (
+\begin{DoxyParamCaption}
+\item[{{\bf table} \&}]{tb}
+\end{DoxyParamCaption}
+)}}\label{classdoor_a981a3e9dc87aacbcf0dd1db664c3201e}
+
+
+Imprime la puerta en el tablero de juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tb} & Referencia al tablero de juego \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+door.\-hpp\item 
+door.\-cpp\end{DoxyCompactItemize}

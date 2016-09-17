@@ -1,0 +1,122 @@
+\hypertarget{classgame}{\section{game Class Reference}
+\label{classgame}\index{game@{game}}
+}
+
+
+Encapsula a todas las demás clases y las gestiona ofreciendo al jugador la interfaz de juego.  
+
+
+
+
+{\ttfamily \#include $<$game.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgame_a7d6df2ef95a2e8c91063c45bdece227c}{game} (int, int)
+\begin{DoxyCompactList}\small\item\em Constructor. Inicia el juego. \end{DoxyCompactList}\item 
+\hyperlink{classgame_a192ee2fc31be4c76067c2c73cbb8da7d}{game} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Constructor. Inicia el juego a partir de un fichero. \end{DoxyCompactList}\item 
+\hypertarget{classgame_ae87abd20c4d8a7906fa48e690a5f1d07}{\hyperlink{classgame_ae87abd20c4d8a7906fa48e690a5f1d07}{$\sim$game} ()}\label{classgame_ae87abd20c4d8a7906fa48e690a5f1d07}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classgame_aa266348a9043a5f44d50126849215977}{void \hyperlink{classgame_aa266348a9043a5f44d50126849215977}{refresh} ()}\label{classgame_aa266348a9043a5f44d50126849215977}
+
+\begin{DoxyCompactList}\small\item\em Actualiza la pantalla limpiándola y repintando el tablero. \end{DoxyCompactList}\item 
+\hypertarget{classgame_a3140391458e0e2cefcacaca8bd50eb20}{void \hyperlink{classgame_a3140391458e0e2cefcacaca8bd50eb20}{initialize} ()}\label{classgame_a3140391458e0e2cefcacaca8bd50eb20}
+
+\begin{DoxyCompactList}\small\item\em Inicia el juego una vez están los datos listos. Se crean las habitaciones, se crean y colocan los personajes y objetos. Se generan los pasillos que conectan las habitaciones. \end{DoxyCompactList}\item 
+\hypertarget{classgame_a72324b08f3e4bbd3792d74b8e63aa282}{void \hyperlink{classgame_a72324b08f3e4bbd3792d74b8e63aa282}{generate\-\_\-paths} ()}\label{classgame_a72324b08f3e4bbd3792d74b8e63aa282}
+
+\begin{DoxyCompactList}\small\item\em Genera los pasillos que conectan las habitaciones. \end{DoxyCompactList}\item 
+void \hyperlink{classgame_a5d6c715d5330843ab2d6fc7e5451c5a3}{trace} (\hyperlink{classtable}{table} \&, char, int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Traza una pared de simbolos vertical u horizontal con destino y fin en los puntos. Necesita que los puntos X o Y estén en el mismo eje o no hará nada. \end{DoxyCompactList}\item 
+\hypertarget{classgame_aedb665cc9bbc7297ab634c5a55bd80d2}{void \hyperlink{classgame_aedb665cc9bbc7297ab634c5a55bd80d2}{start} ()}\label{classgame_aedb665cc9bbc7297ab634c5a55bd80d2}
+
+\begin{DoxyCompactList}\small\item\em Función principal. Mantiene la partida en bucle hasta que el jugador gane o pierda. \end{DoxyCompactList}\item 
+\hypertarget{classgame_ab13015cdc535671de1dd7a5a7970a238}{void \hyperlink{classgame_ab13015cdc535671de1dd7a5a7970a238}{move\-\_\-player} ()}\label{classgame_ab13015cdc535671de1dd7a5a7970a238}
+
+\begin{DoxyCompactList}\small\item\em Solicita un movimiento al jugador y lo aplica. Acto seguido mueve los monstruos y comprueba si el jugador debe recibir daño. \end{DoxyCompactList}\item 
+\hypertarget{classgame_a4d6a95e11f2e1e94c2068131dc20a243}{void \hyperlink{classgame_a4d6a95e11f2e1e94c2068131dc20a243}{move\-\_\-monsters} ()}\label{classgame_a4d6a95e11f2e1e94c2068131dc20a243}
+
+\begin{DoxyCompactList}\small\item\em Genera un movimiento al azar para todos los monstruos. \end{DoxyCompactList}\item 
+\hypertarget{classgame_a9829b63862fb528d78d334644a3ae9d8}{void \hyperlink{classgame_a9829b63862fb528d78d334644a3ae9d8}{test\-\_\-health} ()}\label{classgame_a9829b63862fb528d78d334644a3ae9d8}
+
+\begin{DoxyCompactList}\small\item\em Comprueba la distancia entre monstruos y jugador y disminuye su nivel de vida si procede. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Encapsula a todas las demás clases y las gestiona ofreciendo al jugador la interfaz de juego. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgame_a7d6df2ef95a2e8c91063c45bdece227c}{\index{game@{game}!game@{game}}
+\index{game@{game}!game@{game}}
+\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}game\-::game (
+\begin{DoxyParamCaption}
+\item[{int}]{y, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{classgame_a7d6df2ef95a2e8c91063c45bdece227c}
+
+
+Constructor. Inicia el juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & Altura del tablero \\
+\hline
+{\em x} & Anchura del tablero \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgame_a192ee2fc31be4c76067c2c73cbb8da7d}{\index{game@{game}!game@{game}}
+\index{game@{game}!game@{game}}
+\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}game\-::game (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classgame_a192ee2fc31be4c76067c2c73cbb8da7d}
+
+
+Constructor. Inicia el juego a partir de un fichero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nombre del fichero que contiene los datos de entrada \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgame_a5d6c715d5330843ab2d6fc7e5451c5a3}{\index{game@{game}!trace@{trace}}
+\index{trace@{trace}!game@{game}}
+\subsubsection[{trace}]{\setlength{\rightskip}{0pt plus 5cm}void game\-::trace (
+\begin{DoxyParamCaption}
+\item[{{\bf table} \&}]{tb, }
+\item[{char}]{symbol, }
+\item[{int}]{y1, }
+\item[{int}]{y2, }
+\item[{int}]{x1, }
+\item[{int}]{x2}
+\end{DoxyParamCaption}
+)}}\label{classgame_a5d6c715d5330843ab2d6fc7e5451c5a3}
+
+
+Traza una pared de simbolos vertical u horizontal con destino y fin en los puntos. Necesita que los puntos X o Y estén en el mismo eje o no hará nada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tb} & Referencia al tablero de juego \\
+\hline
+{\em symbol} & Símbolo con el que trazar \\
+\hline
+{\em y1} & Punto de partida \\
+\hline
+{\em y2} & Punto de destino \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+game.\-hpp\item 
+game.\-cpp\end{DoxyCompactItemize}

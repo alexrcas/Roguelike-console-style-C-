@@ -1,0 +1,224 @@
+\hypertarget{classcharacter}{\section{character Class Reference}
+\label{classcharacter}\index{character@{character}}
+}
+
+
+Clase de la que heredan todos los personajes del juego.  
+
+
+
+
+{\ttfamily \#include $<$character.\-hpp$>$}
+
+
+
+Inherited by \hyperlink{classmonster}{monster}, and \hyperlink{classplayer}{player}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcharacter_aad29ae0a639f4f0b624222296df4534c}{\hyperlink{classcharacter_aad29ae0a639f4f0b624222296df4534c}{character} ()}\label{classcharacter_aad29ae0a639f4f0b624222296df4534c}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\hyperlink{classcharacter_a7e98c8f1c52f44817a675fa22f44a659}{character} (int, int, int)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hypertarget{classcharacter_aa0eaa386a09844f41ed246d87f59cbe1}{virtual \hyperlink{classcharacter_aa0eaa386a09844f41ed246d87f59cbe1}{$\sim$character} ()}\label{classcharacter_aa0eaa386a09844f41ed246d87f59cbe1}
+
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classcharacter_a31acbdba24d42ab44099c55e65f62c26}{move\-\_\-left} (\hyperlink{classtable}{table} \&)
+\begin{DoxyCompactList}\small\item\em Mueve el personaje a la izquierda. \end{DoxyCompactList}\item 
+void \hyperlink{classcharacter_a966d6f2730b82a43d606c0ae4588d8cc}{move\-\_\-right} (\hyperlink{classtable}{table} \&)
+\begin{DoxyCompactList}\small\item\em Mueve el personaje a la derecha. \end{DoxyCompactList}\item 
+void \hyperlink{classcharacter_a23f839d31e42c3452a0088f5a14fdeff}{move\-\_\-up} (\hyperlink{classtable}{table} \&)
+\begin{DoxyCompactList}\small\item\em Mueve el personaje arriba. \end{DoxyCompactList}\item 
+void \hyperlink{classcharacter_a416c6bcfeb6fdc5539ec95edca399673}{move\-\_\-down} (\hyperlink{classtable}{table} \&)
+\begin{DoxyCompactList}\small\item\em Mueve el personaje abajo. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classcharacter_af3afd992370f845b5af942ef6bb72fe3}{allowtomove} (\hyperlink{classtable}{table} \&, int, int)
+\begin{DoxyCompactList}\small\item\em Indica si el punto de destino está libre. \end{DoxyCompactList}\item 
+int \hyperlink{classcharacter_af85ff3cf6f818757278122f9c18e15b1}{get\-\_\-x} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la coordenada X del personaje. \end{DoxyCompactList}\item 
+int \hyperlink{classcharacter_a68926e58b8bbf238476b02d52685cb99}{get\-\_\-y} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la coordenada Y del personaje. \end{DoxyCompactList}\item 
+\hypertarget{classcharacter_a1b1b651826ffdb357429c80225dc39c8}{virtual char {\bfseries print} ()=0}\label{classcharacter_a1b1b651826ffdb357429c80225dc39c8}
+
+\item 
+int \& \hyperlink{classcharacter_ad1de6f9462f3818cf4d9a7ad2a6334c3}{get\-\_\-health} ()
+\begin{DoxyCompactList}\small\item\em Devuelve una referencia a la salud del personaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcharacter_a2425caed1dfc41e7c9a52dfb43ea9d79}{\hyperlink{structcoordinate}{coordinate} \hyperlink{classcharacter_a2425caed1dfc41e7c9a52dfb43ea9d79}{cord\-\_\-}}\label{classcharacter_a2425caed1dfc41e7c9a52dfb43ea9d79}
+
+\begin{DoxyCompactList}\small\item\em Coordenadas del personaje. \end{DoxyCompactList}\item 
+\hypertarget{classcharacter_a77c5c29d7353e293620d6e46f644de58}{int \hyperlink{classcharacter_a77c5c29d7353e293620d6e46f644de58}{health\-\_\-}}\label{classcharacter_a77c5c29d7353e293620d6e46f644de58}
+
+\begin{DoxyCompactList}\small\item\em Salud del personaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase de la que heredan todos los personajes del juego. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcharacter_a7e98c8f1c52f44817a675fa22f44a659}{\index{character@{character}!character@{character}}
+\index{character@{character}!character@{character}}
+\subsubsection[{character}]{\setlength{\rightskip}{0pt plus 5cm}character\-::character (
+\begin{DoxyParamCaption}
+\item[{int}]{y, }
+\item[{int}]{x, }
+\item[{int}]{health = {\ttfamily 5}}
+\end{DoxyParamCaption}
+)}}\label{classcharacter_a7e98c8f1c52f44817a675fa22f44a659}
+
+
+Constructor de la clase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & Coordenada de spawn en Y \\
+\hline
+{\em x} & Coordenada de spawn en X \\
+\hline
+{\em health} & Salud del personaje \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcharacter_af3afd992370f845b5af942ef6bb72fe3}{\index{character@{character}!allowtomove@{allowtomove}}
+\index{allowtomove@{allowtomove}!character@{character}}
+\subsubsection[{allowtomove}]{\setlength{\rightskip}{0pt plus 5cm}bool character\-::allowtomove (
+\begin{DoxyParamCaption}
+\item[{{\bf table} \&}]{tb, }
+\item[{int}]{y, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcharacter_af3afd992370f845b5af942ef6bb72fe3}
+
+
+Indica si el punto de destino está libre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tb} & Referencia al tablero de juego \\
+\hline
+{\em y} & Punto deseado en Y \\
+\hline
+{\em x} & Punto deseado en X \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classmonster_ac86a063c732cddc17e870926e933943e}{monster}.
+
+\hypertarget{classcharacter_ad1de6f9462f3818cf4d9a7ad2a6334c3}{\index{character@{character}!get\-\_\-health@{get\-\_\-health}}
+\index{get\-\_\-health@{get\-\_\-health}!character@{character}}
+\subsubsection[{get\-\_\-health}]{\setlength{\rightskip}{0pt plus 5cm}int \& character\-::get\-\_\-health (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcharacter_ad1de6f9462f3818cf4d9a7ad2a6334c3}
+
+
+Devuelve una referencia a la salud del personaje. 
+
+\begin{DoxyReturn}{Returns}
+Salud del personaje 
+\end{DoxyReturn}
+\hypertarget{classcharacter_af85ff3cf6f818757278122f9c18e15b1}{\index{character@{character}!get\-\_\-x@{get\-\_\-x}}
+\index{get\-\_\-x@{get\-\_\-x}!character@{character}}
+\subsubsection[{get\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}int character\-::get\-\_\-x (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcharacter_af85ff3cf6f818757278122f9c18e15b1}
+
+
+Devuelve la coordenada X del personaje. 
+
+\begin{DoxyReturn}{Returns}
+Coordenada X del personaje 
+\end{DoxyReturn}
+\hypertarget{classcharacter_a68926e58b8bbf238476b02d52685cb99}{\index{character@{character}!get\-\_\-y@{get\-\_\-y}}
+\index{get\-\_\-y@{get\-\_\-y}!character@{character}}
+\subsubsection[{get\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}int character\-::get\-\_\-y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcharacter_a68926e58b8bbf238476b02d52685cb99}
+
+
+Devuelve la coordenada Y del personaje. 
+
+\begin{DoxyReturn}{Returns}
+Coordenada Y del personaje 
+\end{DoxyReturn}
+\hypertarget{classcharacter_a416c6bcfeb6fdc5539ec95edca399673}{\index{character@{character}!move\-\_\-down@{move\-\_\-down}}
+\index{move\-\_\-down@{move\-\_\-down}!character@{character}}
+\subsubsection[{move\-\_\-down}]{\setlength{\rightskip}{0pt plus 5cm}void character\-::move\-\_\-down (
+\begin{DoxyParamCaption}
+\item[{{\bf table} \&}]{tb}
+\end{DoxyParamCaption}
+)}}\label{classcharacter_a416c6bcfeb6fdc5539ec95edca399673}
+
+
+Mueve el personaje abajo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tb} & Referencia al tablero de juego \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcharacter_a31acbdba24d42ab44099c55e65f62c26}{\index{character@{character}!move\-\_\-left@{move\-\_\-left}}
+\index{move\-\_\-left@{move\-\_\-left}!character@{character}}
+\subsubsection[{move\-\_\-left}]{\setlength{\rightskip}{0pt plus 5cm}void character\-::move\-\_\-left (
+\begin{DoxyParamCaption}
+\item[{{\bf table} \&}]{tb}
+\end{DoxyParamCaption}
+)}}\label{classcharacter_a31acbdba24d42ab44099c55e65f62c26}
+
+
+Mueve el personaje a la izquierda. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tb} & Referencia al tablero de juego \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcharacter_a966d6f2730b82a43d606c0ae4588d8cc}{\index{character@{character}!move\-\_\-right@{move\-\_\-right}}
+\index{move\-\_\-right@{move\-\_\-right}!character@{character}}
+\subsubsection[{move\-\_\-right}]{\setlength{\rightskip}{0pt plus 5cm}void character\-::move\-\_\-right (
+\begin{DoxyParamCaption}
+\item[{{\bf table} \&}]{tb}
+\end{DoxyParamCaption}
+)}}\label{classcharacter_a966d6f2730b82a43d606c0ae4588d8cc}
+
+
+Mueve el personaje a la derecha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tb} & Referencia al tablero de juego \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcharacter_a23f839d31e42c3452a0088f5a14fdeff}{\index{character@{character}!move\-\_\-up@{move\-\_\-up}}
+\index{move\-\_\-up@{move\-\_\-up}!character@{character}}
+\subsubsection[{move\-\_\-up}]{\setlength{\rightskip}{0pt plus 5cm}void character\-::move\-\_\-up (
+\begin{DoxyParamCaption}
+\item[{{\bf table} \&}]{tb}
+\end{DoxyParamCaption}
+)}}\label{classcharacter_a23f839d31e42c3452a0088f5a14fdeff}
+
+
+Mueve el personaje arriba. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tb} & Referencia al tablero de juego \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+character.\-hpp\item 
+character.\-cpp\end{DoxyCompactItemize}

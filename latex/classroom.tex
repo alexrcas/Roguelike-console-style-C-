@@ -1,0 +1,147 @@
+\hypertarget{classroom}{\section{room Class Reference}
+\label{classroom}\index{room@{room}}
+}
+
+
+Representa la habitación.  
+
+
+
+
+{\ttfamily \#include $<$room.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classroom_ace9f88908f4096a844bcb1b950600ef5}{room} (int)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hypertarget{classroom_a87f233e38131d61a1922b9b613a3bba5}{\hyperlink{classroom_a87f233e38131d61a1922b9b613a3bba5}{$\sim$room} ()}\label{classroom_a87f233e38131d61a1922b9b613a3bba5}
+
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_a92536abc8e5a388bc370a170a2e3e650}{print} (\hyperlink{classtable}{table} \&)
+\begin{DoxyCompactList}\small\item\em Pinta la habitación en el tablero. \end{DoxyCompactList}\item 
+void \hyperlink{classroom_a707be9da65fbe8d015eb0e3c5bae2aca}{create} (int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Genera las coordenadas de una habitación dentro del área dada. \end{DoxyCompactList}\item 
+\hypertarget{classroom_a5a46993a29c3b7c60f8df16dd0ad4721}{void \hyperlink{classroom_a5a46993a29c3b7c60f8df16dd0ad4721}{create\-\_\-doors} ()}\label{classroom_a5a46993a29c3b7c60f8df16dd0ad4721}
+
+\begin{DoxyCompactList}\small\item\em Coloca las puertas de la habitación. \end{DoxyCompactList}\item 
+\hyperlink{structcoordinate}{coordinate} \hyperlink{classroom_acff5d20dc04497c1ef9d16385951e9dd}{get\-\_\-coordinate} (int)
+\begin{DoxyCompactList}\small\item\em Devuelve las coordenadas de uno de los dos puntos de la habitación. \end{DoxyCompactList}\item 
+\hyperlink{structcoordinate}{coordinate} \hyperlink{classroom_a2b33823c65c5745282ab55f024295739}{get\-\_\-door\-\_\-coordinate} (int)
+\begin{DoxyCompactList}\small\item\em Devuelve las coordenadas de la puerta elegida de la habitación. \end{DoxyCompactList}\item 
+\hyperlink{structcoordinate}{coordinate} \hyperlink{classroom_a85482142f1cc93d4642d59fc90165aad}{get\-\_\-access\-\_\-point} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el punto de acceso de la habitación (su centro) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representa la habitación. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classroom_ace9f88908f4096a844bcb1b950600ef5}{\index{room@{room}!room@{room}}
+\index{room@{room}!room@{room}}
+\subsubsection[{room}]{\setlength{\rightskip}{0pt plus 5cm}room\-::room (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classroom_ace9f88908f4096a844bcb1b950600ef5}
+
+
+Constructor de la clase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Número de la habitación \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classroom_a707be9da65fbe8d015eb0e3c5bae2aca}{\index{room@{room}!create@{create}}
+\index{create@{create}!room@{room}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}void room\-::create (
+\begin{DoxyParamCaption}
+\item[{int}]{hinf, }
+\item[{int}]{hsup, }
+\item[{int}]{vinf, }
+\item[{int}]{vsup}
+\end{DoxyParamCaption}
+)}}\label{classroom_a707be9da65fbe8d015eb0e3c5bae2aca}
+
+
+Genera las coordenadas de una habitación dentro del área dada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hinf} & Límite inferior en X \\
+\hline
+{\em hsup} & Límite superior en X \\
+\hline
+{\em vinf} & Límite inferior en Y \\
+\hline
+{\em vsup} & Límite superior en Y \\
+\hline
+\end{DoxyParams}
+\hypertarget{classroom_a85482142f1cc93d4642d59fc90165aad}{\index{room@{room}!get\-\_\-access\-\_\-point@{get\-\_\-access\-\_\-point}}
+\index{get\-\_\-access\-\_\-point@{get\-\_\-access\-\_\-point}!room@{room}}
+\subsubsection[{get\-\_\-access\-\_\-point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coordinate} room\-::get\-\_\-access\-\_\-point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classroom_a85482142f1cc93d4642d59fc90165aad}
+
+
+Devuelve el punto de acceso de la habitación (su centro) 
+
+\begin{DoxyReturn}{Returns}
+Estructura que contiene las coordenadas del punto de acceso 
+\end{DoxyReturn}
+\hypertarget{classroom_acff5d20dc04497c1ef9d16385951e9dd}{\index{room@{room}!get\-\_\-coordinate@{get\-\_\-coordinate}}
+\index{get\-\_\-coordinate@{get\-\_\-coordinate}!room@{room}}
+\subsubsection[{get\-\_\-coordinate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coordinate} room\-::get\-\_\-coordinate (
+\begin{DoxyParamCaption}
+\item[{int}]{inx}
+\end{DoxyParamCaption}
+)}}\label{classroom_acff5d20dc04497c1ef9d16385951e9dd}
+
+
+Devuelve las coordenadas de uno de los dos puntos de la habitación. 
+
+\begin{DoxyReturn}{Returns}
+Estructura que contiene las coordenadas de un vércite 
+\end{DoxyReturn}
+\hypertarget{classroom_a2b33823c65c5745282ab55f024295739}{\index{room@{room}!get\-\_\-door\-\_\-coordinate@{get\-\_\-door\-\_\-coordinate}}
+\index{get\-\_\-door\-\_\-coordinate@{get\-\_\-door\-\_\-coordinate}!room@{room}}
+\subsubsection[{get\-\_\-door\-\_\-coordinate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coordinate} room\-::get\-\_\-door\-\_\-coordinate (
+\begin{DoxyParamCaption}
+\item[{int}]{inx}
+\end{DoxyParamCaption}
+)}}\label{classroom_a2b33823c65c5745282ab55f024295739}
+
+
+Devuelve las coordenadas de la puerta elegida de la habitación. 
+
+\begin{DoxyReturn}{Returns}
+Estructura que contiene las coordenadas de la puerta 
+\end{DoxyReturn}
+\hypertarget{classroom_a92536abc8e5a388bc370a170a2e3e650}{\index{room@{room}!print@{print}}
+\index{print@{print}!room@{room}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void room\-::print (
+\begin{DoxyParamCaption}
+\item[{{\bf table} \&}]{tb}
+\end{DoxyParamCaption}
+)}}\label{classroom_a92536abc8e5a388bc370a170a2e3e650}
+
+
+Pinta la habitación en el tablero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tb} & Referencia al tablero de juego \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+room.\-hpp\item 
+room.\-cpp\end{DoxyCompactItemize}
